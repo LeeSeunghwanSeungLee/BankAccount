@@ -36,11 +36,11 @@ public class User {
   private Status status;
 
   @Column(name = "created_at")
-  @CreationTimestamp
+  @CreationTimestamp // jpa 추가 어노테이션 create 시에 시간을 작성
   private LocalDateTime createdAt;
 
   @Column(name = "updated_at")
-  @UpdateTimestamp
+  @UpdateTimestamp // update 시에 시간을 작성
   private LocalDateTime updatedAt;
 
   public User() { }
