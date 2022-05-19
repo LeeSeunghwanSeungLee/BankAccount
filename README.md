@@ -1,4 +1,4 @@
-# 네이버 라인 계좌 관리 API 서버 개발
+# 은행 계좌 관리 API 서버 개발
 
 ## 소개
 
@@ -17,7 +17,7 @@
 - 요청/응답 형태(Content-Type)는 JSON 형식을 사용합니다.
 - DB Schema는 [schema-h2.sql](./src/main/resources/schema-h2.sql) 파일에서 확인해주세요. Seed는 [data-h2.sql](./src/main/resources/data-h2.sql) 파일에서 확인해주세요.
   - 파일은 수정할 수 없습니다.
-- DB는 H2를 사용하며 DB 값을 별도로 디버깅 하고 싶으실 경우엔 {실행시 제공되는 url}/web/h2-console/ 에 들어가서 connect를 하면 됩니다. 문제를 풀기 위한 필수 작업은 아닙니다.
+- DB는 H2를 사용하며 DB 값을 별도로 디버깅 하고 싶으실 경우엔 {실행시 제공되는 url}/web/h2-console/ 에 들어가서 connect를 하면 됩니다.
   - h2-console 연결에 필요한 입력 정보는 아래와 같습니다
     - Dirver Class: org.h2.Driver,
     - User name: sa
