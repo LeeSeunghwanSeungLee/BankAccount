@@ -2,12 +2,15 @@
 
 #### 공통 및 1번 문제 해결 
 
-* jpa 라이브러리 추가
+* 라이브러리 추가
   * pom.xml에 구현한다
+  * Jpa 추가 및 테스트 진행
+  * Junit5 추가 및 테스트 진행
 
 * WebConfig.java
   * bean 또는 filter, converter, formatter, intercepter 등을 추가할 컴포넌트 구현 클래스입니다.
   * 빈을 추가한 후 컨텍스트에 추가되어있는지 테스트 케이스를 구현할 줄 알아야합니다.
+  * `@Configuration` 에 추가한 빈과, `@Component` 를 통한 빈 추가의 경우, 반환 타입이 동일하면 중복이 될 가능성이 있으므로 name || Qualifier 를 고려해봅시다.
 
 * 유저 엔티티 구현
   * .sql을 보고 유저 엔티티를 구현합니다.
@@ -16,10 +19,11 @@
 * Filter
   * request 헤더 정보에 문제에서 특정한 키값이 존재하는지 확인하기 위한 필터입니다.
   * 존재하지 않는다면 ExceptionHandler를 참조하여 ResponseStatus를 401(anauthorization) 으로 구현합니다.
+  * `@Configuration` 클래스를 필터를 추가하기 위한 추상 클래스 또는 인터페이스를 상속받아 구현합니다.
 
 
 * 컨트롤러 세팅
-  * 계좌 설멍을 위한 컨트롤러 진입점을 ApplicationContext에 구현합니다.
+  * 계좌 설명을 위한 컨트롤러 진입점을 ApplicationContext에 구현합니다.
 
 * 계좌 엔티티 구현
   * .sql을 보고 계좌 엔티티를 구현합니다.
@@ -34,5 +38,5 @@
   * 테스트 케이스를 작성해서 빠르게 구현해봅니다.
 
 
-
+* 잊지말고, docs 파일을 만들기 위한 라이브러리를 찾아봐야 합니다.
 #### 계속 업데이트하여 살아있는 기능구현 문서를 만들고 있습니다.
