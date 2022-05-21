@@ -56,3 +56,9 @@ CREATE TABLE transfers (
   KEY idx_transfers_on_withdraw_id  (withdraw_id),
   KEY idx_transfers_on_deposit_id   (deposit_id)
 );
+
+
+CREATE TABLE tb_sample (
+  id          bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name     varchar(15) NOT NULL
+)

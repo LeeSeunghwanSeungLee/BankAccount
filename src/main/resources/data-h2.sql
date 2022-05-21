@@ -47,3 +47,11 @@ VALUES
   (4, 3, 10, 'WITHDRAW', 10000, 30000, 'withdraw', CURRENT_TIMESTAMP - interval '1' day),
   (5, 3, 10, 'DEPOSIT', 30000, 20000, 'deposit', CURRENT_TIMESTAMP ),
   (6, 3, 10, 'WITHDRAW', 10000, 50000, 'withdraw', CURRENT_TIMESTAMP );
+
+
+INSERT INTO tb_sample
+(id, name)
+VALUES
+  (1, 'sample1'),
+  (2, 'sample2'),
+  (3, 'sample3');
