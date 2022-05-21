@@ -5,7 +5,7 @@
 * 라이브러리 추가
   * pom.xml에 구현한다
   * Jpa 추가 및 테스트 진행 [0]
-  * Junit5 추가 및 테스트 진행 
+  * Junit5 추가 및 테스트 진행 [0]
 
 * WebConfig.java
   * bean 또는 filter, converter, formatter, intercepter 등을 추가할 컴포넌트 구현 클래스입니다.
