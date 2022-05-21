@@ -18,8 +18,8 @@
  
 * Filter
   * request 헤더 정보에 문제에서 특정한 키값이 존재하는지 확인하기 위한 필터입니다.
-  * 존재하지 않는다면 ExceptionHandler를 참조하여 ResponseStatus를 401(anauthorization) 으로 구현합니다.
-  * `@Configuration` 클래스를 필터를 추가하기 위한 추상 클래스 또는 인터페이스를 상속받아 구현합니다.
+  * 존재하지 않는다면 ExceptionHandler를 참조하여 ResponseStatus를 401(anauthorization) 으로 구현합니다. [0]
+  * `@Configuration` 클래스를 필터를 추가하기 위한 추상 클래스 또는 인터페이스를 상속받아 구현합니다. [0]
   * `Spring Security` 를 검토합니다 [link](https://kimchanjung.github.io/programming/2020/07/01/spring-security-01/)
 
 
