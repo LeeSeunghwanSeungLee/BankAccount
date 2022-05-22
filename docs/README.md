@@ -28,7 +28,7 @@
   * 스프링 기술을 활용하기 위해 인터셉터 적용도 고려해볼 필요가 있다. [0]
 
 * ArgumentResolver
-  * Sample 구현하기
+  * Sample 구현하기 [0]
 
 * 컨트롤러 세팅
   * 계좌 설명을 위한 컨트롤러 진입점을 ApplicationContext에 구현합니다.[0]

@@ -3,6 +3,7 @@ package com.naver.line.demo.account.entities;
 import com.naver.line.demo.user.entities.User;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.checkerframework.checker.units.qual.C;
 
 import javax.persistence.*;
@@ -10,7 +11,7 @@ import java.time.LocalDate;
 
 @Entity
 @Getter
-@RequiredArgsConstructor
+@Setter
 @Table(name="accounts")
 public class Account {
     @Id
