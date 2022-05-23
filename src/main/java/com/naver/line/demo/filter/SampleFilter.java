@@ -1,5 +1,6 @@
 package com.naver.line.demo.filter;
 
+import com.naver.line.demo.common.exceptions.UnauthorizedException;
 import com.naver.line.demo.utils.ApiUtils;
 import org.springframework.http.HttpStatus;
 

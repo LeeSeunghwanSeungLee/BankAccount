@@ -18,14 +18,14 @@ public class SelfAppConfig implements WebMvcConfigurer {
     /**
      * 생성한 필터 조건을 확인할 수 있음
      */
-    @Bean
-    public FilterRegistrationBean<SampleFilter> firstFilter() {
-        FilterRegistrationBean<SampleFilter> registrationBean = new FilterRegistrationBean<>();
-        registrationBean.setFilter(new SampleFilter()); registrationBean.addUrlPatterns("*");
-        registrationBean.setOrder(1);
-        registrationBean.setName("first-filter");
-        return registrationBean;
-    }
+//    @Bean
+//    public FilterRegistrationBean<SampleFilter> firstFilter() {
+//        FilterRegistrationBean<SampleFilter> registrationBean = new FilterRegistrationBean<>();
+//        registrationBean.setFilter(new SampleFilter()); registrationBean.addUrlPatterns("*");
+//        registrationBean.setOrder(1);
+//        registrationBean.setName("first-filter");
+//        return registrationBean;
+//    }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

@@ -8,14 +8,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 import java.util.List;
 
-@Configuration
-@RequiredArgsConstructor
-public class ResolverAppConfig extends WebMvcConfigurationSupport {
-    private final SampleArgumentResolver sampleArgumentResolver;
-
-    @Override
-    protected void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
-        super.addArgumentResolvers(argumentResolvers);
-        argumentResolvers.add(sampleArgumentResolver);
-    }
-}
+//@Configuration
+//@RequiredArgsConstructor
+//public class ResolverAppConfig extends WebMvcConfigurationSupport {
+//    private final SampleArgumentResolver sampleArgumentResolver;
+//
+//    @Override
+//    protected void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
+//        super.addArgumentResolvers(argumentResolvers);
+//        argumentResolvers.add(sampleArgumentResolver);
+//    }
+//}
