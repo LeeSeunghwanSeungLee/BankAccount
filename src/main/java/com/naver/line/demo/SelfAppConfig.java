@@ -1,13 +1,17 @@
 package com.naver.line.demo;
 
 import com.naver.line.demo.filter.SampleFilter;
+import com.naver.line.demo.handlerexception.SampleHandlerExceptionResolver;
 import com.naver.line.demo.interceptor.SampleInterceptor;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import java.util.List;
 
 @Configuration
 public class SelfAppConfig implements WebMvcConfigurer {
@@ -29,5 +33,10 @@ public class SelfAppConfig implements WebMvcConfigurer {
                 .order(1)
                 .addPathPatterns("/api/sample/**");
 //                .excludePathPatterns("/css/**", "/*.ico", "/error");
+    }
+
+    @Override
+    public void extendHandlerExceptionResolvers(List<HandlerExceptionResolver> resolvers) {
+        resolvers.add(new SampleHandlerExceptionResolver());
     }
 }
