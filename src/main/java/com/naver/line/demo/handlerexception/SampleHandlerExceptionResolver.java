@@ -22,3 +22,9 @@ public class SampleHandlerExceptionResolver implements HandlerExceptionResolver 
         return null;
     }
 }
+
+/**
+ * 1. ExceptionHandlerExceptionResolver -> ExceptionHandler를 Contorller에 구현해서, 자동으로 해당 컨트롤러 매핑
+ * 2. StatusHandlerExceptionResolver -> 컨트롤러나 서비스에 HttpStatus annotaion
+ * 3. DefaultHandlerExceptionResolver -> 자동 타입 변환 // 가장 자주 사용할 수 있을 것 같음
+ */
