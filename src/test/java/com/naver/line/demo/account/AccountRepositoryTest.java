@@ -24,7 +24,7 @@ class AccountRepositoryTest {
     void save() { // User 객체를 생성하여 User 테이블에 저장한다.
         Account account = new Account();
         account.setStatus(User.Status.ENABLED);
-        account.setAmount(1);
+//        account.setAmount(1);
         account.setNumber("100");
         account.setDaily_transfer_limit(1);
         account.setTransfer_limit(1);
@@ -35,7 +35,7 @@ class AccountRepositoryTest {
 
         account = new Account();
         account.setStatus(User.Status.ENABLED);
-        account.setAmount(1);
+//        account.setAmount(1);
         account.setNumber("105");
         account.setDaily_transfer_limit(1);
         account.setTransfer_limit(1);
