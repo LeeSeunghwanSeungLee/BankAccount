@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @Column
     private Integer user_id;
@@ -28,7 +28,7 @@ public class Account {
     private String number;
 
     @Column
-    private Integer amount; // TODO - check boundary
+    private Long amount;
 
     @Column
     private User.Status status;
