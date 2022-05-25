@@ -1,5 +1,7 @@
 package com.naver.line.demo.user;
 
+import com.naver.line.demo.account.AccountRepository;
+import com.naver.line.demo.account.entities.Account;
 import com.naver.line.demo.test.Transfers;
 import com.naver.line.demo.test.TransfersRepository;
 import com.naver.line.demo.user.entities.User;
@@ -17,6 +19,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserRepositoryTest {
     @Autowired
     UserRepository userRepository;
+
+    @Autowired
+    AccountRepository accountRepository;
 
     @Test
     @Order(1)
@@ -38,4 +43,15 @@ class UserRepositoryTest {
         User target = userRepository.findByName("new");
         System.out.println(target.getName());
     }
+
+    @Test
+    @Order(1)
+    @DisplayName("리포지토리에서 실제로 값을 가져오는지 확인한다.")
+    void findAllAccount() {
+        List<Account> list = accountRepository.findAll();
+        for (Account a : list) {
+            System.out.println(a.getId() + " : " + a.getNumber());
+        }
+    }
+
 }

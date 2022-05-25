@@ -15,14 +15,15 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @Setter
+@RequiredArgsConstructor
 @Table(name="accounts")
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
-    private Integer user_id;
+    @Column(name = "user_id")
+    private Integer userId;
 
     @Column
     private String number;
@@ -46,4 +47,13 @@ public class Account {
     @Column(name = "updated_at")
     @UpdateTimestamp // update 시에 시간을 작성
     private LocalDateTime updatedAt;
+
+    public Account(Integer userId, String number, Integer transfer_limit, Integer daily_transfer_limit) {
+        this.userId = userId;
+        this.number = number;
+        this.amount = 0L;
+        this.status = User.Status.ENABLED;
+        this.transfer_limit = transfer_limit;
+        this.daily_transfer_limit = daily_transfer_limit;
+    }
 }
